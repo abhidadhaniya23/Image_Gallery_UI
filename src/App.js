@@ -20,12 +20,12 @@ function App() {
   }, [term]);
   return (
     <>
-      <div className="font-body">
+      <div className="font-manrope">
         <Header />
         <div className="mx-auto text-center">
           <SearchImg searchText={(txt) => setTerm(txt)} />
         </div>
-        <div className="grid w-full grid-flow-row grid-cols-1 mx-auto sm:w-4/5 justify-items-center sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid w-full grid-flow-row grid-cols-1 mx-auto sm:w-4/5 justify-items-center md:grid-cols-2 lg:grid-cols-3">
           {img.map((image) => (
             <Card key={image.id} image={image} />
           ))}

@@ -14,17 +14,21 @@ function numFormatter(num) {
 function Items({ image }) {
   return (
     <>
-      <div className="flex flex-col items-center justify-center p-2 mx-3 mt-2 text-center rounded-md align-center">
-        <i className={`flex items-center justify-center w-10 h-10 mb-2 text-blue-600 bg-blue-200 rounded-full fa fa-download`}></i>
-        <span>{numFormatter(image.downloads)}</span>
-      </div>
-      <div className="flex flex-col items-center justify-center p-2 mx-3 mt-2 text-center rounded-md align-center">
-        <i className={`flex items-center justify-center w-10 h-10 mb-2 text-blue-600 bg-blue-200 rounded-full fa fa-eye`}></i>
-        <span>{numFormatter(image.views)}</span>
-      </div>
-      <div className="flex flex-col items-center justify-center p-2 mx-3 mt-2 text-center rounded-md align-center">
+      <div className="flex flex-col items-center justify-center p-2 mx-1.5 mt-2 text-center rounded-md sm:mx-2.5 align-center">
         <i className={`flex items-center justify-center w-10 h-10 mb-2 text-blue-600 bg-blue-200 rounded-full fab fa-gratipay`}></i>
-        <span>{numFormatter(image.likes)}</span>
+        <span className="font-normal text-blue-800 font-poppins">{numFormatter(image.likes)}</span>
+      </div>
+      <div className="flex flex-col items-center justify-center p-2 mx-1.5 mt-2 text-center rounded-md sm:mx-2.5 align-center">
+        <i className={`flex items-center justify-center w-10 h-10 mb-2 text-blue-600 bg-blue-200 rounded-full fa fa-eye`}></i>
+        <span className="font-normal text-blue-800 font-poppins">{numFormatter(image.views)}</span>
+      </div>
+      <div className="flex flex-col items-center justify-center p-2 mx-1.5 mt-2 text-center rounded-md sm:mx-2.5 align-center">
+        <i className={`flex items-center justify-center w-10 h-10 mb-2 text-blue-600 bg-blue-200 rounded-full fa fa-comment-dots`}></i>
+        <span className="font-normal text-blue-800 font-poppins">{numFormatter(image.comments)}</span>
+      </div>
+      <div className="flex flex-col items-center justify-center p-2 mx-1.5 mt-2 text-center rounded-md sm:mx-2.5 align-center">
+        <i className={`flex items-center justify-center w-10 h-10 mb-2 text-blue-600 bg-blue-200 rounded-full fa fa-cloud-download-alt`}></i>
+        <span className="font-normal text-blue-800 font-poppins">{numFormatter(image.downloads)}</span>
       </div>
     </>
   );

@@ -119,6 +119,8 @@ module.exports = {
     extend: {
       fontFamily: {
         body: ["myFont"],
+        poppins: ["Poppins, sans-serif"],
+        manrope: ["Manrope, sans-serif"],
       },
     },
   },
