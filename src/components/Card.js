@@ -10,7 +10,7 @@ function Card({ image }) {
   return (
     <div className={`w-[80%] sm:w-[95%] mb-8 rounded-md bg-blue-100 overflow-hidden`}>
       <div className="w-full max-h-[16rem] bg-blue-200 overflow-hidden">
-        <LazyLoadImage src={image.webformatURL} alt="" height="16rem" effect="blur" key={image.id} />
+        <LazyLoadImage src={image.webformatURL} height="14rem" alt="" effect="blur" key={image.id} />
       </div>
       <div className="flex flex-col items-center justify-center p-4">
         {image.user !== "Photo-View" ? <h2 className={`text-2xl sm:text-3xl text-center text-blue-700`}>Photo By {image.user}</h2> : <h2 className={`text-3xl text-blue-700`}>Photo By Me</h2>}
