@@ -48,3 +48,48 @@
     src: url(../fonts/SF_Pro_Display_Regular.woff);
   }
 }
+
+.jellyBtn {
+  z-index: 1;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+}
+
+.jellyBtn:hover {
+  cursor: pointer;
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+.loading {
+  @apply border-purple-300 border-t-purple-700;
+  border-width: 0.2rem;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
